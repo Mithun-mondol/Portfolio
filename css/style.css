@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Sacramento&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Sacramento', cursive; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  background: rgb(255, 213, 205);
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h2 {
+  font-weight: 700;
+  padding: 0 0 25px 0;
+}
+
+h3 {
+  color: white;
+  line-height: 2.5rem;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+/* Navbar Style */
+
+.navbar {
+  padding-bottom: 0;
+}
+
+ul {
+  position: relative;
+}
+
+li.nav-item {
+  padding-left: 20px;
+  font-size: 1.25rem;
+}
+
+li.nav-item:nth-child(1)::after {
+  content: "";
+  height: 22px;
+  width: 2px;
+  background-color: rgb(153, 153, 153);
+  position: absolute;
+  top: 13.5px;
+  left: 129px;
+  transform: rotate(22deg);
+}
+
+li.nav-item:nth-child(2)::after {
+  content: "";
+  height: 22px;
+  width: 2px;
+  background-color: rgb(153, 153, 153);
+  position: absolute;
+  top: 13.5px;
+  left: 226px;
+  transform: rotate(22deg);
+}
+
+hr.nav-hr {
+  border: none;
+  border-top: 3px solid;
+  margin: 0;
+  padding: 0;
+}
+
+/* media Query */
+@media screen and (max-width: 992px) {
+  li.nav-item:nth-child(1)::after {
+    height: 2px;
+    width: 107px;
+    top: 49px;
+    left: 16px;
+    transform: rotate(0deg);
+  }
+
+  li.nav-item:nth-child(2)::after {
+    height: 2px;
+    width: 107px;
+    top: 94px;
+    left: 16px;
+    transform: rotate(0deg);
+  }
+}
+
+/* Title Style */
+
+.top-img {
+  width: 40%;
+  margin-top: 35px;
+  padding-top: 10px;
+}
+
+h1.title {
+  color: #47ca50;
+  font-size: 5.5rem;
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h2.sub-title {
+  color: #83b300;
+}
+
+.bottom-img {
+  width: 45%;
+}
+
+/* Comments Section Style */
+
+#comments {
+  background-color: rgb(195, 174, 214);
+}
+
+#comments h2 {
+  margin-top: 25px;
+}
+
+.carousel-item {
+  padding: 0 20%;
+}
+
+.comment-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+/* About Me Style */
+
+#aboutMe i {
+  margin: 25px 10px;
+}
+/* 
+#aboutMe i.fa-facebook-f::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 11px;
+}
+
+#aboutMe i.fa-twitter::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 90px;
+}
+
+#aboutMe i.fa-wifi::before {
+  transform: rotate(20deg);
+}
+
+#aboutMe i.fa-wifi::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 180px;
+} */
+
+span {
+  color: red;
+  font-weight: bold;
+}
+/* Footer Style */
+
+#footer {
+  background-color: rgb(134, 117, 169);
+}
+
+.copy-right {
+  color: white;
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-nav-container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.bottom-nav-item {
+  padding: 20px 0;
+  margin-left: 25px;
+}
+
+.bottom-nav-item a.active {
+  color: #b9fc00;
+}
+
+.bottom-nav-item a:active {
+  color: #b9fc00;
+}
+
+.bottom-nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-nav-link:hover {
+  color: rgb(230, 9, 9);
+  text-decoration: none;
+}
